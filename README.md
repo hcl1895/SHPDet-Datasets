@@ -10,9 +10,7 @@ VOC-FOG, VOC-RAIN and VOC-DARK for adverse-weather object detection.
 
 Download the train/test ZIPs from [Releases](https://github.com/hcl1895/SHPDet-Datasets/releases/tag/v1.0) and extract them into the same directory. Each split includes degraded images (`JPEGImages`), paired clean images (`JPEGImages_clean`), original VOC XML annotations (`Annotations`), and a five-class detection manifest (`labels.txt`). Image dimensions and filenames are preserved. The three datasets retain the original train/test image-ID lists from the TogetherNet VOC-FOG release.
 
-The class order is `person, bicycle, car, motorbike, bus`. Each manifest line is `image_path xmin,ymin,xmax,ymax,class_id ...`; coordinates retain the VOC annotation values. The manifest selects these five classes and excludes difficult objects. XML files retain the original VOC labels.
-
-VOC-FOG retains the existing fog images. VOC-RAIN adds procedural rain streaks to the fog images. VOC-DARK applies brightness scaling and a gamma transform to the paired clean images. Parameters are in `generation_config.json`; per-image parameters are included in each generated split. Archive checksums are listed in `SHA256SUMS`.
+The class order is `person, bicycle, car, motorbike, bus`. Each manifest line is `image_path xmin,ymin,xmax,ymax,class_id ...`; coordinates retain the VOC annotation values. The manifest selects these five classes. XML files retain the original VOC labels.
 
 ## Sources
 
