@@ -1,0 +1,55 @@
+{
+  "release": "v1.0",
+  "classes": [
+    "person",
+    "bicycle",
+    "car",
+    "motorbike",
+    "bus"
+  ],
+  "split_counts": {
+    "train": 9578,
+    "test": 2129
+  },
+  "base_seed": 20261118,
+  "rain": {
+    "input": "VOC-FOG images",
+    "noise": "uniform [0,255), uint8",
+    "threshold": [
+      230,
+      250
+    ],
+    "streak_length_pixels": [
+      30,
+      70
+    ],
+    "angle_degrees": [
+      75,
+      105
+    ],
+    "rain_layer_gamma": 0.6,
+    "opacity": [
+      0.6,
+      0.9
+    ],
+    "brightness_scale": [
+      0.9,
+      1.0
+    ]
+  },
+  "dark": {
+    "input": "paired clean images",
+    "brightness_scale": [
+      0.45,
+      0.6
+    ],
+    "gamma": [
+      1.5,
+      2.2
+    ]
+  },
+  "jpeg_quality": 95,
+  "resize": false,
+  "numpy": "2.2.6",
+  "opencv": "4.10.0"
+}
